@@ -1,3 +1,5 @@
+# FAISS VectorDB demo with LangChain & OpenAI LLM.
+
 
 This project is about **'Similarity Search'** & VectorDB **Retriveal** using OpenAI LLM.
 
