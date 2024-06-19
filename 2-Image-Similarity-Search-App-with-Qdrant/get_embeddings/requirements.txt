@@ -1,0 +1,9 @@
+notebook
+python-dotenv
+
+pillow
+pandas
+torch
+transformers
+
+qdrant-client
