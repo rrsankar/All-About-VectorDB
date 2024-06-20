@@ -95,6 +95,8 @@ In this project, I used the Free-tier cloud version of Qdrant and not the docker
 
 In this project, I used Streamlit to create a simple Web Application to demonstrate how Image Similarity Search work with Qdrant.
 
+Find the code to the streamlit app here: [app.py](https://github.com/rrsankar/All-About-VectorDB/blob/main/2-Image-Similarity-Search-App-with-Qdrant/app/app.py).
+
 In the homepage of the web application, you would see 12 sample images to select an input image from.
 
 ![app-home](./assets/img/app-home.png)  
