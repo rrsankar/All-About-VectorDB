@@ -18,7 +18,7 @@ Vector databases have gained popularity for its applications in Retrieval Augmen
 
 ![vectorDB-intro](./assets/img/vectorDB-intro.png)
 
-## Why do we need Vector Databases?  
+## Why do you need Vector Databases?  
 
 Vector databases are essential in applications needing similarity search, like LLMs, Recommendation Systems, Content-Based Image Retrieval, and Personalized Search. 
 
@@ -42,7 +42,7 @@ A point (vector) has an id, vector & payload.
 
 **Payload** is a **JSON object** that stores additional data related to the vector. E.g. text keyword, numeric, geo-coordinates etc.
 
-We can use Payload to filter vectors during a query.
+You can use Payload to filter vectors during a query.
 
 ## Qdrant Architecture  
 
@@ -69,6 +69,47 @@ A **Payload** is a JSON object with additional data you can add to a vector.
 In local, Qdrant can use one of two options for storage, In-memory storage (in RAM) or Memmap storage (in disk).
 
 Alternatively, you can have the service running in Qdrant cloud and access it via API.
+
+## About the Project
+
+**Goal:** Find similar images stored in a VectorDB based on an input image.
+
+**Encoder: ResNet50**
+
+All the images stored in the collection are encoded using the same neural network (here, ResNet50).
+
+The [notebook](https://github.com/rrsankar/All-About-VectorDB/blob/main/2-Image-Similarity-Search-App-with-Qdrant/get_embeddings/store_embeddings.ipynb) inside "get_embeddings" folder will convert the images and store it in Qdrant cluster in cloud. 
+
+Check the notebook to see how it works.
+
+*Note: Detailed explanation about the architecture & working of ResNet50 will be uploaded to a different repo.*  
+*Link will be updated as soon as it is live.*
+
+**VectorDB: Qdrant**
+
+In this project, I used the Free-tier cloud version of Qdrant and not the docker version in local.
+
+*Note: Detailed explanation about Vector databases & Qdrant are provided above and also through out this repo in different experiments.*
+
+**App: Streamlit**
+
+In this project, I used Streamlit to create a simple Web Application to demonstrate how Image Similarity Search work with Qdrant.
+
+In the homepage of the web application, you would see 12 sample images to select an input image from.
+
+![app-home](./assets/img/app-home.png)  
+
+When you select an input image, it will find 12 similar images in Qdrant collection and display them.
+
+![app-search-results](./assets/img/app-search-results.png)  
+
+## Conclusion
+
+This is an experiment on Image Similarity using Qdrant Vector search engine.
+
+This is a groundwork for the upcoming VectorDB, Image vectors, Generative AI & RAG project.
+
+Stay tuned.
 
 ## References
 
